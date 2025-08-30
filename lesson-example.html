@@ -199,6 +199,7 @@
             border-radius: 12px;
             margin: 25px 0;
             border-left: 5px solid #1976d2;
+            position: relative;
         }
 
         .quote-source {
@@ -242,6 +243,52 @@
             font-size: 3em;
             margin-bottom: 15px;
             color: #764ba2;
+        }
+
+        /* Стили для глоссария */
+        .glossary-section {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 5px solid #ff9800;
+        }
+
+        .glossary-item {
+            background: white;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #ff9800;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .glossary-term {
+            font-weight: bold;
+            color: #e65100;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        .glossary-definition {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #1976d2;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .download-button:hover {
+            background: #1565c0;
+            transform: translateY(-2px);
         }
 
         footer {
@@ -302,7 +349,7 @@
                     <h3>1. Вход в тему (5 мин)</h3>
                     <div class="timer"><i class="fas fa-clock"></i> Время: 5 минут</div>
                     <p><strong>Кейс:</strong> "Подросток скачал бесплатное приложение. Через неделю родители заметили, что ему стали приходить странные рекламные сообщения. Откуда они взялись?"</p>
-                    <p><strong>Вопрос-провокация:</strong> "А вы когда-нибудь соглашались на правила, не читая их?"</p>
+                    <p><strong>Вопрос-провокация:</strong> "А вы когда-нибуди соглашались на правила, не читая их?"</p>
                 </div>
 
                 <div class="phase">
@@ -407,7 +454,7 @@
                 <div class="activity-grid">
                     <div class="activity-card">
                         <div class="activity-icon">👥</div>
-                        <h4>Работа в группах</h4>
+                        <h4>Работа в группаов</h4>
                         <p>Разделите участников на группы по 3-4 человека для обсуждения</p>
                     </div>
                     
@@ -430,7 +477,117 @@
                     </div>
                 </div>
             </div>
-        </div>
+
+            <!-- ГЛОССАРИЙ ДОБАВЛЕН ЗДЕСЬ -->
+            <div class="section">
+                <h2><i class="fas fa-book"></i> Digital Ethics Glossary</h2>
+                <p>Key terms in English for international dialogue about digital transparency</p>
+                
+                <div class="glossary-section">
+                    <div class="glossary-item">
+                        <div class="glossary-term">Transparency</div>
+                        <div class="glossary-definition">
+                            The principle that algorithms, data collection practices, and decision-making processes 
+                            should be open, understandable, and explainable to users and stakeholders.
+                        </div>
+                    </div>
+
+                    <div class="glossary-item">
+                        <div class="glossary-term">Algorithm</div>
+                        <div class="glossary-definition">
+                            A set of step-by-step instructions that computers follow to perform tasks, 
+                            make decisions, or solve problems. Often called "black boxes" when not transparent.
+                        </div>
+                    </div>
+
+                    <div class="glossary-item">
+                        <div class="glossary-term">Data Collection</div>
+                        <div class="glossary-definition">
+                            The process of gathering information about users' activities, preferences, 
+                            behaviors, and characteristics through digital platforms and applications.
+                        </div>
+                    </div>
+
+                    <div class="glossary-item">
+                        <div class="glossary-term">Personal Data</div>
+                        <div class="glossary-definition">
+                            Any information that relates to an identified or identifiable living individual, 
+                            including names, email addresses, location data, and online identifiers.
+                        </div>
+                    </div>
+
+                    <div class="glossary-item">
+                        <div class="glossary-term">Informed Consent</div>
+                        <div class="glossary-definition">
+                            Permission given by users after they have been clearly informed about 
+                            how their data will be collected, used, and shared.
+                        </div>
+                    </div>
+
+                    <div class="glossary-item">
+                        <div class="glossary-term">Digital Footprint</div>
+                        <div class="glossary-definition">
+                            The trail of data left behind by users' online activities, including 
+                            social media posts, website visits, and online transactions.
+                        </div>
+                    </div>
+
+                    <div class="glossary-item">
+                        <div class="glossary-term">Algorithmic Bias</div>
+                        <div class="glossary-definition">
+                            Systematic and repeatable errors in computer systems that create 
+                            unfair outcomes, such as privileging one arbitrary group of users over others.
+                        </div>
+                    </div>
+
+                    <div class="glossary-item">
+                        <div class="glossary-term">Explainable AI (XAI)</div>
+                        <div class="glossary-definition">
+                            Artificial intelligence systems designed to provide human-understandable 
+                            explanations for their decisions and actions.
+                        </div>
+                    </div>
+
+                    <div class="glossary-item">
+                        <div class="glossary-term">Data Privacy</div>
+                        <div class="glossary-definition">
+                            The right of individuals to control how their personal information 
+                            is collected, used, and shared by organizations.
+                        </div>
+                    </div>
+
+                    <div class="glossary-item">
+                        <div class="glossary-term">Digital Literacy</div>
+                        <div class="glossary-definition">
+                            The ability to find, evaluate, utilize, share, and create content 
+                            using information technologies and the Internet.
+                        </div>
+                    </div>
+
+                    <div class="glossary-item">
+                        <div class="glossary-term">Ethical Framework</div>
+                        <div class="glossary-definition">
+                            A structured set of guidelines that help individuals and organizations 
+                            make decisions that are morally right and socially responsible.
+                        </div>
+                    </div>
+
+                    <div class="glossary-item">
+                        <div class="glossary-term">Accountability</div>
+                        <div class="glossary-definition">
+                            The responsibility of organizations and individuals for their actions 
+                            and decisions, including transparency about how those decisions are made.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-block">
+                    <p>This glossary provides essential terminology for discussing digital transparency in international educational contexts.</p>
+                    <p class="quote-source">- STOIK Methodology for Digital Ethics Education</p>
+                </div>
+            </div>
+
+        </div> <!-- закрывающий тег для content -->
 
         <footer>
             <p>© 2024 Методика СТОИК | Пример занятия: Прозрачность в цифровом мире</p>
