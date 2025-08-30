@@ -57,6 +57,10 @@
             max-width: 200px;
             height: auto;
             margin-bottom: 15px;
+            border: 3px solid white;
+            border-radius: 10px;
+            padding: 5px;
+            background: white;
         }
 
         h1 {
@@ -207,6 +211,20 @@
             color: #764ba2;
         }
 
+        .methodology-block {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 5px solid #2196f3;
+        }
+
+        .methodology-block h4 {
+            color: #1565c0;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
         footer {
             text-align: center;
             padding: 30px;
@@ -247,7 +265,7 @@
     <div class="container">
         <div class="header">
             <div class="logo-container">
-                <img src="https://raw.githubusercontent.com/AlenaMogila/images/main/CTO%D0%98%D0%9A.png" alt="Логотип СТОИК" class="logo">
+                <img src="https://raw.githubusercontent.com/AlenaMogila/images/main/CTO%D0%98%D0%9A.png" alt="Логотип СТОИК" class="logo" onerror="this.style.display='none'">
             </div>
             <h1>Мастерская диалога</h1>
             <p class="subtitle">Методика совместного мышления и этического развития</p>
@@ -286,11 +304,22 @@
                         <h4>Мы — мыслящая пара</h4>
                         <p>Истина «пробивается» сквозь диалог</p>
                     </div>
+                    <div class="principle-card">
+                        <div class="icon">🌍</div>
+                        <h4>Они — сообщество</h4>
+                        <p>Все участники вместе создают полифонию смыслов</p>
+                    </div>
                 </div>
             </div>
 
             <div class="section">
                 <h2><i class="fas fa-tools"></i> Методы</h2>
+                
+                <div class="methodology-block">
+                    <h4>📊 Методика</h4>
+                    <p><strong>Инновация</strong> — сочетание классических философских практик с современными цифровыми технологиями, создающее уникальное образовательное пространство для развития этического мышления в эпоху искусственного интеллекта.</p>
+                </div>
+                
                 <div class="principle-grid">
                     <div class="principle-card">
                         <div class="icon">📋</div>
@@ -339,7 +368,7 @@
                 </div>
 
                 <div class="phase">
-                    <h3>б) Диалог в малых группах</h3>
+                    <h3>б) Диалог в малых группаш</h3>
                     <p>Участники обсуждают кейс, ищут разные позиции. Каждая группа формулирует <em>«свой принцип»</em> (например: «ИИ должен быть честным»)</p>
                 </div>
 
@@ -377,6 +406,16 @@
                         <h4>Цифровая практика</h4>
                         <p>Мини-тесты/голосования через смартфон и обсуждение результатов</p>
                     </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">🗳️</div>
+                        <h4>Голосование</h4>
+                        <p>Интерактивные опросы и обсуждение результатов</p>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">✍️</div>
+                        <h4>Креативное письмо</h4>
+                        <p>Создание текстов, эссе, диалогов на этические темы</p>
+                    </div>
                 </div>
             </div>
 
@@ -395,5 +434,18 @@
             <p>Для образовательных целей и развития этического мышления</p>
         </footer>
     </div>
+
+    <script>
+        // Проверка загрузки логотипа
+        document.addEventListener('DOMContentLoaded', function() {
+            const logo = document.querySelector('.logo');
+            if (logo && logo.naturalWidth === 0) {
+                console.log('Логотип не загрузился');
+                // Можно добавить заглушку текстовую
+                const logoContainer = document.querySelector('.logo-container');
+                logoContainer.innerHTML = '<div style="font-size: 2em; color: white;">🧠 СТОИК</div>';
+            }
+        });
+    </script>
 </body>
 </html>
